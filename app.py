@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import math
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 
 
 def safe_eval(expr: str, x: float) -> float:
